@@ -1,0 +1,10 @@
+platform :ios, '8.0'
+target "JX3-SDB" do
+pod 'AFNetworking'
+pod 'SDWebImage'
+pod 'MJExtension'
+pod 'MJRefresh'
+pod 'SDAutoLayout'
+pod 'LKDBHelper'
+pod 'ReactiveCocoa','~> 2.5'
+end
