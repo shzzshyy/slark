@@ -1,5 +1,5 @@
 //
-//  SceneDelegate.h
+//  ModulaAVC.h
 //  JX3-SDB
 //
 //  Created by Slark on 2020/3/11.
@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
+NS_ASSUME_NONNULL_BEGIN
 
-@property (strong, nonatomic) UIWindow * window;
+@interface ModulaAVC : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

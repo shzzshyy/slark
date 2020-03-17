@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		286D75F9E1139DB3E6296802 /* libPods-JX3-SDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E8FBC41FF073F279DA912D /* libPods-JX3-SDB.a */; };
 		5B825C2D2418BDE70058B38F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B825C2C2418BDE70058B38F /* AppDelegate.m */; };
-		5B825C302418BDE70058B38F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B825C2F2418BDE70058B38F /* SceneDelegate.m */; };
 		5B825C332418BDE70058B38F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B825C322418BDE70058B38F /* ViewController.m */; };
 		5B825C362418BDE70058B38F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B825C342418BDE70058B38F /* Main.storyboard */; };
 		5B825C382418BDE90058B38F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B825C372418BDE90058B38F /* Assets.xcassets */; };
@@ -17,6 +16,7 @@
 		5B825C3E2418BDE90058B38F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B825C3D2418BDE90058B38F /* main.m */; };
 		5B825C482418BDE90058B38F /* JX3_SDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B825C472418BDE90058B38F /* JX3_SDBTests.m */; };
 		5B825C532418BDE90058B38F /* JX3_SDBUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B825C522418BDE90058B38F /* JX3_SDBUITests.m */; };
+		5B825C622418C1E70058B38F /* ModulaAVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B825C612418C1E70058B38F /* ModulaAVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +41,6 @@
 		5B825C282418BDE70058B38F /* JX3-SDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JX3-SDB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B825C2B2418BDE70058B38F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5B825C2C2418BDE70058B38F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5B825C2E2418BDE70058B38F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		5B825C2F2418BDE70058B38F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		5B825C312418BDE70058B38F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5B825C322418BDE70058B38F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5B825C352418BDE70058B38F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,6 +54,8 @@
 		5B825C4E2418BDE90058B38F /* JX3-SDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JX3-SDBUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B825C522418BDE90058B38F /* JX3_SDBUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JX3_SDBUITests.m; sourceTree = "<group>"; };
 		5B825C542418BDE90058B38F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B825C602418C1E70058B38F /* ModulaAVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModulaAVC.h; sourceTree = "<group>"; };
+		5B825C612418C1E70058B38F /* ModulaAVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModulaAVC.m; sourceTree = "<group>"; };
 		98E8FBC41FF073F279DA912D /* libPods-JX3-SDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JX3-SDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B30F1985C390D4A3475E0D /* Pods-JX3-SDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JX3-SDB.release.xcconfig"; path = "Pods/Target Support Files/Pods-JX3-SDB/Pods-JX3-SDB.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,12 +111,14 @@
 		5B825C2A2418BDE70058B38F /* JX3-SDB */ = {
 			isa = PBXGroup;
 			children = (
+				5B825C642419C2570058B38F /* CustomTool */,
+				5B825C632419C2440058B38F /* Category */,
 				5B825C2B2418BDE70058B38F /* AppDelegate.h */,
 				5B825C2C2418BDE70058B38F /* AppDelegate.m */,
-				5B825C2E2418BDE70058B38F /* SceneDelegate.h */,
-				5B825C2F2418BDE70058B38F /* SceneDelegate.m */,
 				5B825C312418BDE70058B38F /* ViewController.h */,
 				5B825C322418BDE70058B38F /* ViewController.m */,
+				5B825C602418C1E70058B38F /* ModulaAVC.h */,
+				5B825C612418C1E70058B38F /* ModulaAVC.m */,
 				5B825C342418BDE70058B38F /* Main.storyboard */,
 				5B825C372418BDE90058B38F /* Assets.xcassets */,
 				5B825C392418BDE90058B38F /* LaunchScreen.storyboard */,
@@ -142,6 +144,20 @@
 				5B825C542418BDE90058B38F /* Info.plist */,
 			);
 			path = "JX3-SDBUITests";
+			sourceTree = "<group>";
+		};
+		5B825C632419C2440058B38F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		5B825C642419C2570058B38F /* CustomTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomTool;
 			sourceTree = "<group>";
 		};
 		6DE4CCF71FD0A9A52862887F /* Frameworks */ = {
@@ -342,8 +358,8 @@
 			files = (
 				5B825C332418BDE70058B38F /* ViewController.m in Sources */,
 				5B825C2D2418BDE70058B38F /* AppDelegate.m in Sources */,
+				5B825C622418C1E70058B38F /* ModulaAVC.m in Sources */,
 				5B825C3E2418BDE90058B38F /* main.m in Sources */,
-				5B825C302418BDE70058B38F /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +532,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2KSBBNC8CA;
 				INFOPLIST_FILE = "JX3-SDB/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -534,6 +551,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2KSBBNC8CA;
 				INFOPLIST_FILE = "JX3-SDB/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
